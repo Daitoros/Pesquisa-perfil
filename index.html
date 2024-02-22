@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <!--fontes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">    <!--Fim fontes-->
+    <title>Pesquisa</title>
+  </head>
+  <body>
+    <h1 id="title">O que acha do meu perfil no linkedin?</h1>
+    <p id="description"><em>Até o momento trata-se de uma página visual apenas.</em></p>
+    <form id="survey-form">
+      <fieldset>
+            <fieldset id="intro">
+            <label id="name-label" for="name" class="introq"> Informe seu nome: <input type="text" id="name" required></input>
+            <label id="email-label" for="email" class="introq">Informe seu email? <input type="email" id="email" required></input></label>
+            <label id="number-label" for="number" class="introq">Faz quantos meses que está procurando um funcionário? <input type="number" id="number" min="0" max="12" placeholder="0-12"></input></label>
+            <label for="dropdown">Como classifica o meu perfil?
+                <select id="dropdown">
+                    <option value="">escolha um</option>
+                    <option value="1">Ótimo</option>
+                    <option value="2">Bom</option>
+                    <option value="3">Razoável</option>
+                    <option value="4">Precisa melhorar</option>
+                </select>
+            </label>
+            <hr>
+        </fieldset>
+        <fieldset id="recomendacoes">
+          <legend>Recomendaria meu perfil?</legend>
+          <div class="opcoes">
+            <label for="quero"><input id="quero" type="radio" name="recomendar">Quero você na minha empresa!</input></label>
+            <label for="recomendo"><input id="recomendo" type="radio" name="recomendar">Já estou recomendando!</input></label>
+            <label for="melhorar"><input id="melhorar" type="radio" name="recomendar">Acho que precisa melhorar...</input></label>
+          </div>
+        </fieldset>
+        <fieldset id="atencao">
+            <legend>O que mais lhe chamou atenção no meu perfil?</legend>
+            <div class="opcoes">
+              <label for="formacao"><input id="formacao" type="checkbox" value="1">Formação</input></label>
+              <label for="ingles"><input id="ingles" type="checkbox" value="2">Inglês</input></label>
+              <label for="projetos"><input id="projetos" type="checkbox" value="3">Projetos</input></label>
+              <label for="certificados"><input id="certificados" type="checkbox" value="4">Certificados</input></label>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset id="review">
+          <legend>Coisas que eu deveria melhorar</legend>
+          <textarea id="melhorar" rows="4" cols="50" placeholder="Cara, seu perfil é bom, mas falta..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Enviar"></input>
+      </fieldset>
+    </form>
+  </body>
+</html>
+    

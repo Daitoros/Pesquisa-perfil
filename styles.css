@@ -1,0 +1,66 @@
+/*Intro*/
+#title, #description{
+    text-align: center;
+    color: white;
+  }
+  #title{
+    font-family: 'Oswald', sans-serif;
+  }
+  body{
+    background-color: black;
+    margin: 0px 0px 15px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+/*bordas*/
+  fieldset{
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto 0px;
+    background-color: white;
+    border: none;
+  }
+  #atencao{
+    margin-top: 20px;
+  }
+
+/*botoes*/
+  input, .introq{
+    display: block;
+  }
+  .introq input{
+    margin: 0 0 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  input[type="radio"], input[type="checkbox"]{
+    display: inline-block;
+    margin: 0 4px 0px 30px;
+  }
+  .opcoes{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .opcoes label{
+    display: inline; 
+  }
+
+/*textos*/
+  legend{
+    margin: 20px auto 10px;
+    font-family: 'Oswald', sans-serif;
+  }
+  textarea, #submit{
+    display:block;
+    width: 70%;
+    margin: 0 auto 5px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  option{
+    font-family: 'Quicksand', sans-serif;
+  }
+  #number{
+    width: 50px;
+  }
